@@ -1,0 +1,216 @@
+/* variable definition */
+:root {
+    --color-primary: #475877;
+    --color-secondary: #FFB741;
+    --color-secondary-hover: #d79a37;
+    --color-white: #F0F0F0;
+    --color-black: #131721;
+    --color-form-field: #dedede;
+}
+
+/* Color overwrite */
+.bg-primary {
+    background-color: var(--color-primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary) !important;
+}
+
+
+.bg-white {
+    background-color: var(--color-white) !important;
+}
+
+.bg-black {
+    background-color: var(--color-black) !important;
+}
+
+.bg-form-field {
+    background-color: var(--color-form-field) !important;
+}
+
+.form-control:focus {
+
+    box-shadow: 0 0 0 0.25rem rgb(255 183 65 / 25%) !important;
+    border-color: rgb(255 183 65 / 50%) !important;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    color: var(--color-black);
+}
+
+.btn-secondary-hover {
+    background-color: var(--color-secondary-hover) !important;
+}
+
+.btn-white {
+    background-color: var(--color-white);
+    border-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.btn-black {
+    background-color: var(--color-black);
+    border-color: var(--color-black);
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus {
+    background-color: var(--color-secondary-hover);
+    border-color: var(--color-secondary-hover);
+    color: var(--color-black);
+}
+
+.btn-white:hover,
+.btn-white:active,
+.btn-white:focus {
+    background-color: var(--color-white);
+    border-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background-color: var(--color-black);
+    border-color: var(--color-black);
+}
+
+
+
+.form-select:focus {
+
+    box-shadow: 0 0 0 0.25rem rgb(255 183 65 / 25%) !important;
+    border-color: rgb(255 183 65 / 50%) !important;
+}
+
+.form-check-input:checked {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+/* Safari & Chrome - Webkit Rendering */
+::-webkit-selection {
+    background: var(--color-secondary);
+    color: var(--color-white);
+    text-shadow: none;
+}
+
+/* Mozilla based - Gecko Rendering */
+::-moz-selection {
+    background: var(--color-secondary);
+    color: var(--color-white);
+    text-shadow: none;
+}
+
+/* styling */
+
+body {
+    background-color: var(--color-primary);
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* min-height: 100vh;
+    display: flex;
+    flex-direction: column; */
+}
+
+
+/* DOUBLE SLIDER */
+section.range-slider {
+    position: relative;
+    height: 35px;
+    text-align: center;
+}
+
+section.range-slider input {
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 15px;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+section.range-slider input::-webkit-slider-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 1;
+    outline: 0;
+    background: var(--color-secondary);
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+section.range-slider input::-moz-range-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 10;
+    -moz-appearance: none;
+    width: 9px;
+    background: var(--color-secondary);
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+section.range-slider input::-moz-range-track {
+    position: relative;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 1);
+    border: 0;
+}
+
+section.range-slider input:last-of-type::-moz-range-track {
+    -moz-appearance: none;
+    background: none transparent;
+    border: 0;
+}
+
+section.range-slider input[type=range]::-moz-focus-outer {
+    border: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1;
+    display: none;
+
+}
+
+/* disable dropdown arrow */
+.dropdown-toggle:after {
+    content: none !important;
+}
+
+/* bigger checkboxes */
+.form-check-input {
+    scale: 1.3 !important;
+}
+
+/* disable link default styling */
+a.card {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+.footer-sitemap>div>a {
+    color: var(--color-black);
+    text-decoration: none;
+}

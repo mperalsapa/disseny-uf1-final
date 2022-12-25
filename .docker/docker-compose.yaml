@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  web:
+    container_name: disseny-uf1-final
+    build: .
+    # image: 192.168.1.12:5000/disseny-uf1-final
+    ports:
+      - "8023:80"
+    stdin_open: true
+    tty: true
+    volumes:
+      - ../:/var/www/html
